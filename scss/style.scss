@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/Siauliai.jpg");
+  min-height: 100vh;
+  font-family: 'Bebas Neue', sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  min-height: 100vh;
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  max-width: 880px;
+  width: 90%;
+}
+
+h1 {
+  padding-top: 20px;
+  font-size: 50px;
+  letter-spacing: 15px;
+  transition: .8s ease-in-out;
+}
+
+h1:hover{
+  scale: 1.5;
+}
+
+.tophead{
+  text-align: justify;
+  letter-spacing: 2px;
+  color: rgba(8, 6, 6, 0.7);
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: .5s;
+}
+
+.tophead:hover {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: .3s ease-in;
+}
+
+img:hover{
+  box-shadow: 0px 2px 2px 2px rgb(92, 23, 23);
+}
+
+iframe{
+  max-width: 880px;
+  width: 100%;
+}
+
+.tab {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #f1f1f14e;
+}
+
+.tab button {
+  font-weight: 600;
+  width: 100%;
+  height: auto;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #db6868;
+}
+
+.tab button.active {
+  background-color: #a94444;
+}
+
+.tabcontent {
+  font-size: 30px;
+  width: 90%;
+  display: none;
+  padding: 6px 12px;
+  animation: fadeEffect 2s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0.3;}
+  to {opacity: 1;}
+}
+
+footer{
+  line-height: 30px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
